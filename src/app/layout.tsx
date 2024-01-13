@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import '@/styles/globals.css'
+import { Navbar } from '@/components/navbar'
 
 export const metadata: Metadata = {
   title: 'Mercadofy',
@@ -15,7 +16,8 @@ export default function RootLayout({
     <html lang="en" className='h-full'>
       <body className='h-full relative antialiased font-sans'>
         <main className='relative flex flex-col min-h-screen'>
-          <section className='flex flex-grow flex-1'>
+          <Navbar />
+          <section className='flex flex-col flex-grow flex-1'>
             {children}
           </section>
         </main>
