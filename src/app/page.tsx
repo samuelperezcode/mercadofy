@@ -26,7 +26,6 @@ export default function Home() {
   return (
     <>
       <Wrapper >
-        <div className="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)]"></div>
         <div className="flex flex-col mx-auto py-20 text-center items-center max-w-3xl gap-6">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
             Your marketplace for high quality {' '}
@@ -59,7 +58,7 @@ export default function Home() {
                       <Icon className="w-1/3 h-1/3"/>
                     </div>
                   </div>
-                  <div className="mt-6 md:mt-0 md:ml-4 lg:mt-0 lg:ml-6">
+                  <div className="mt-6 md:mt-2 md:ml-4 lg:mt-2 lg:ml-6">
                     <h3 className="text-base text-gray-900 font-medium">{label}</h3>
                     <p className="mt-3 text-sm text-muted-foreground">{description}</p>
                   </div>

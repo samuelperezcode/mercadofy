@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { Wrapper } from "./wrapper";
-import { Icons } from "./icons";
+import { Wrapper } from "@/components/wrapper";
+import { Icons } from "@/components/icons";
+import { NavItems } from "@/components/nav-items";
 
 export function Navbar() {
   return (
@@ -14,6 +15,10 @@ export function Navbar() {
               <Link href={'/'}>
                 <Icons.logo className="w-10 h-10" />
               </Link>
+            </div>
+
+            <div className="hidden z-50 lg:block lg:ml-8 lg:self-stretch ">
+              <NavItems />
             </div>
           </nav>
         </Wrapper>
